@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Formulaire extends React.Component {
 
    state = {
@@ -50,6 +51,12 @@ class Formulaire extends React.Component {
 
            </form>
        )
+   }
+
+   static propTypes={
+      addMessage : React.PropTypes.func.isRequired,
+      pseudo: React.PropTypes.string.isRequired,
+      length: React.PropTypes.number.isRequired
    }
 }
 
